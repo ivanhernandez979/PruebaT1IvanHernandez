@@ -1,18 +1,18 @@
 package control;
 
-/**
- * @author ivan hernandez
- * @version 1
- * @see ControlFx
- * 
- */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
+/**
+ * @author ivan hernandez
+ * @version 1
+ * @see ControlFx
+ * 
+ */
 public class MainFx extends Application {
 
     private AnchorPane myPane;

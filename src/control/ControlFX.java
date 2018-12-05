@@ -2,6 +2,9 @@ package control;
 
 import java.io.IOException;
 
+import com.jfoenix.controls.JFXButton;
+
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,7 +12,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class ControlFX {
-
+	@FXML
+	JFXButton Boton;
 	
 	public void sendStage() {
 		try {
@@ -44,5 +48,13 @@ public class ControlFX {
 		}
 		
 	}
-
+	@FXML
+	public void closeStage() {
+			Stage thisStage = (Stage) Boton.getScene().getWindow();
+			thisStage.close();
+			sendStage();
+		}
+	//public void handleClose() {
+	//System.exit(0);
+//}
 }
